@@ -2555,11 +2555,32 @@ body {
     }
 
     .thumb-item {
-        flex: 0 0 120px;
+        flex: 0 0 auto;
     }
 
+    /* Vertical thumbnail stack on mobile — no animation */
     .immersive-thumbs {
+        flex-direction: column;
+        overflow-x: visible;
+        overflow-y: visible;
         gap: 1rem;
+        padding: 1rem 0;
+        mask-image: none;
+        -webkit-mask-image: none;
+    }
+
+    .thumb-item {
+        width: 100%;
+        flex: 0 0 auto;
+        aspect-ratio: 16 / 9;
+        border-radius: 10px;
+        transition: none;
+        transform: none !important;
+    }
+
+    .thumb-item.active {
+        transform: none !important;
+        box-shadow: 0 0 0 2px #f5c518;
     }
 
     /* --- Disable parallax on card images (mobile) --- */
@@ -2712,8 +2733,6 @@ body {
     .gallery-master {
         border-radius: 12px;
     }
-
-    .thumb-item {
-        flex: 0 0 90px;
-    }
-}
+    /* thumb-item vertical layout inherited from 768px block */
+}
+
