@@ -1,4 +1,4 @@
-// Portfolio Page Logic for JAFFA GROUPS
+// Portfolio Page Logic for JAFFA GROUP
 
 // 1. Initialize Lenis Smooth Scroll
 const lenis = new Lenis({
@@ -269,3 +269,4 @@ window.addEventListener('pageshow', (event) => {
         window.location.reload();
     }
 });
+

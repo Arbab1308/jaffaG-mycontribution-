@@ -128,7 +128,7 @@ heroTl.to(".hero-eyebrow", {
     ease: "power2.inOut"
 }, 0.5);
 
-// Phase 2: "JAFFA GROUPS" reveals and centers
+// Phase 2: "JAFFA GROUP" reveals and centers
 heroTl.to(".hero-text-overlay .brand-title", {
     opacity: 1,
     y: 0,
@@ -445,3 +445,4 @@ if (hamburgerBtn && mobileNavOverlay) {
         });
     });
 }
+
